@@ -1,0 +1,37 @@
+/*Farhad Reza
+BSc in CSE
+Khwaja Yunus Ali University
+
+Enter N =3
+  *
+ **
+***
+
+*/
+
+#include<stdio.h>
+int main()
+{
+
+    int n,col,row;
+    printf("Enter N =");
+    scanf("%d", &n);
+
+    for(row=1; row<=n;row++)
+    {
+        for(col=1;col<=n-row;col++) //printing space
+        {
+            printf(" ");
+        }
+
+        for(col=1;col<=row;col++) //printing number
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+
+
+    return 0;
+}
